@@ -1,0 +1,572 @@
+form *{
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.home-search-box{
+	background-color: rgba(0,28,16,.6);
+	border: 1px dotted #001C13;
+	border-radius: 4px;
+	color: #fff;
+	padding: 20px;
+	position: absolute;
+	top: 40vh;
+	text-align: center;
+	width: 45%;
+	min-width: 250px;
+	z-index: 99999;
+}
+
+.home-search-box h1{
+	font-size: 26px;
+	display: block !important;
+}
+
+.home-search-box h3{
+	font-size: 14px;
+	color: #4AA50E;
+	margin-bottom: 10px;
+}
+
+.home-search-box article{
+	display: inline-block;
+	position: relative;
+	margin: 0 1px 5px 1px;
+	width: 45%;
+	min-width: 240px;
+}
+
+.home-search-box article i{
+	color: #4AA50E;
+	font-size:20px;
+	position: absolute;
+	top: 32%;
+	left: 5.4%;
+}
+
+.home-search-box [type="text"]{
+	border: none;
+	border-radius: 2px;
+	background-color: #fff;
+	color: #001C13;
+	padding: 6% 6% 6% 14%;
+	width: 80%;
+	min-width: 180px;
+}
+
+.home-search-box [type="submit"]{
+	border: none;
+	border-radius: 2px;
+	background-color: #4AA50E;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 5px;
+	padding: 2% 4%;
+}
+
+.home-search-box [type="submit"]:hover{
+	background-color: #42930D;
+}
+
+
+
+
+/* filter box (search box) styles */
+
+.filter-box{
+	background-color: rgba(0,28,19,.1);
+	padding: 3% 10%;
+	margin-bottom: 20px;
+	width:80%;
+}
+
+
+
+/* book seat popup */
+
+.book-seat-popup,
+.login-popup,
+.set-lift-alert-popup,
+.rate-user-popup,
+.del-offer-popup,
+.id-verify-popup{
+	background-color: rgba(0,28,19,.9);
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width:100%;
+	z-index: 999999999;
+}
+
+.book-seat-popup form,
+.login-popup form,
+.set-lift-alert-popup form,
+.rate-user-popup form,
+.del-offer-popup form,
+.id-verify-popup form{
+	background-color: #fff;
+	border-radius: 2px;
+	margin: 10% auto auto;
+	padding: 15px;
+	position: relative;
+	min-height: 150px;
+	min-width: 200px;
+	width: 25%;
+}
+
+.book-seat-popup form .fa-close,
+.login-popup form .fa-close,
+.set-lift-alert-popup form .fa-close,
+.rate-user-popup form .fa-close,
+.del-offer-popup form .fa-close,
+.id-verify-popup form .fa-close{
+	background-color: #C00;
+	border-radius: 50%;
+	color: #fff;
+	padding: 4px 5.2px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+}
+
+.book-seat-popup form #seat-price{
+	border-bottom: 1px solid #eee;
+	padding: 0 0 10px;
+}
+
+.book-seat-popup form #no-seat{
+	text-align: center;
+	padding: 10px 0;
+}
+
+.book-seat-popup form #seat-price strong{
+	position: absolute;
+	top: 10px;
+	right: 14px;
+}
+
+.book-seat-popup form #seat-price strong,
+.book-seat-popup form #no-seat strong{
+	font-size: 20px;
+	color: #001C13;
+}
+
+.book-seat-popup form select,
+.login-popup form [type="text"],
+.login-popup form [type="password"],
+.register-form form select,
+.register-form form [type="text"],
+.register-form form [type="password"],
+.set-lift-alert-popup form [type="text"],
+.rate-user-popup form [type="text"],
+.id-verify-popup form select,
+.id-verify-popup form [type="file"]{
+	border: 1px solid #ddd;
+	display: block;
+	padding: 10px 6%;
+	width: 100%;
+}
+
+.login-popup form [type="text"],
+.register-form form [type="text"],
+.register-form form [type="password"],
+.set-lift-alert-popup form [type="text"],
+.rate-user-popup form [type="text"],
+.id-verify-popup form [type="file"]{
+	margin: 10px 0;
+	width: 87.5%;
+}
+
+.register-form form [type="text"]#flname{
+	display: inline-block;
+	margin:10px 0 0;
+	width: 37%;
+}
+
+.book-seat-popup form #terms-private{
+	padding: 10px 0;
+}
+
+.book-seat-popup form #terms-private a{
+	color: #4AA50E;
+}
+
+.book-seat-popup form #terms-private a:hover{
+	color: #001C13;
+}
+
+.book-seat-popup form [type="submit"],
+.login-popup form [type="submit"],
+.register-form form [type="submit"],
+.set-lift-alert-popup form [type="submit"],
+.rate-user-popup form [type="submit"],
+.id-verify-popup form [type="submit"]{
+	background-color: #4AA50E;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	display: block;
+	padding: 10px 20px;
+	width: 100%;
+}
+
+.book-seat-popup form [type="submit"]:hover,
+.login-popup form [type="submit"]:hover,
+.register-form form [type="submit"]:hover,
+.set-lift-alert-popup form [type="submit"]:hover,
+.rate-user-popup form [type="submit"]:hover,
+.id-verify-popup form [type="submit"]:hover{
+	background-color: #001C13;
+}
+
+.register-form form label{
+	display:block;
+	margin: 10px 0;
+}
+
+
+
+
+/* login popup */
+
+.login-popup{
+}
+
+.login-popup form,
+.rate-user-popup form{
+	text-align:center;
+	position: relative;
+}
+
+.login-popup nav{
+	margin-top:5px;
+}
+
+.login-popup nav a{
+	color: #4AA50E;
+}
+
+.login-popup nav a:hover{
+	color: #001C13;
+}
+
+.login-popup nav>a#fpass{
+	display: block;
+	margin-bottom:10px;
+}
+
+.login-popup form #fb-login-btn,
+.register-form form #fb-login-btn{
+	text-align:center; 
+	margin:0 0 18px 0; 
+	padding: 0 0 30px 0; 
+	font-size:20px; 
+	border-bottom: 1px solid #eee;
+}
+
+.login-popup form #fb-login-btn a,
+.register-form form #fb-login-btn a{
+	color:#fff; 
+	background-color: #3b5990; 
+	padding:10px 0px 10px 0px; 
+	border-radius:2px; 
+	display:block; 
+	width:100%;
+}
+
+.login-popup form #fb-login-btn .fa-facebook-f,
+.register-form form #fb-login-btn .fa-facebook-f{
+	color:#3b5990; 
+	background-color:#fff; 
+	border-radius:2px; 
+	font-size:14px; 
+	padding:6px 0; 
+	margin-right:6px; 
+	width:27px;
+}
+
+.login-popup form #or,
+.register-form form #or{
+	position: absolute;
+	top: 82px;
+	left: 0px;
+	width: 100%;
+}
+
+.login-popup form #or strong,
+.register-form form #or strong{
+	background-color: #fff;
+	padding: 0 20px;
+}
+
+#facebook-login{
+}
+
+
+
+/* registration form */
+
+.register-form{
+	width:100%;
+}
+
+.register-form form{
+	background-color: #fff;
+	border-radius: 2px;
+	margin: auto auto;
+	padding: 15px;
+	position: relative;
+	text-align: center;
+	min-height: 150px;
+	min-width: 200px;
+	width: 40%;
+}
+
+
+
+
+/* set lift alert popup */
+
+.set-lift-alert-popup form div{
+	position: relative;
+}
+
+.set-lift-alert-popup form [type="text"]{
+	padding-left: 12%;
+	width: 81%;
+}
+
+.set-lift-alert-popup form div i{
+	position: absolute;
+	top:13px;
+	left: 5%;
+}
+
+
+
+
+.rate-user-popup form .fa-star-o{
+	font-size: 30px;
+}
+
+.rate-user-popup form textarea{
+	border: 1px solid #ddd;
+	display: block;
+	margin: 5% 0;
+	padding: 10px 6%;
+	height: 120px;
+	width: 87%;
+}
+
+
+
+
+/* dashboard */
+
+.dashboard-form{
+}
+
+.dashboard-form [type="text"],
+.dashboard-form [type="password"],
+.dashboard-form textarea,
+.dashboard-form select{
+	border: 1px solid #ddd;
+	display: block;
+	padding: 10px 3%;
+	min-width: 200px;
+	width: 40%;
+}
+
+.dashboard-form textarea{
+	height:200px;
+}
+
+.dashboard-form label{
+	margin-right: 20px;
+}
+
+#action{
+	display: block;
+	margin-top: 40px;
+	text-align: center;
+}
+
+#action a{
+	background-color: #4AA50E;
+	color: #fff;
+	border-radius: 2px;
+	padding: 10px 20px;
+}
+
+#action a:hover{
+	background-color: #001C13;
+}
+
+
+
+
+/* delete offer from the dashboard */
+
+.del-offer-popup form{
+	min-height: 30px !important;
+	text-align: center;
+}
+
+.del-offer-popup .fa-close{
+	background-color: #C00;
+	border-radius: 50%;
+	color: #fff;
+	padding: 4px 5.2px;
+	position: absolute;
+	top: -40px !important;
+	right: -30px  !important;
+}
+
+
+
+
+
+/* messages on the dashboard */
+
+.messages-form{
+}
+
+.messages-form .chathead-list{
+	border: 1px solid #eee;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	padding: 3%;
+	height: 200px;
+	width: 94%;
+	overflow: auto;
+}
+
+.messages-form .chathead-list a{
+	display: block;
+	border-bottom: 1px solid #eee;
+	padding: 5px 0px;
+	overflow: hidden;
+}
+
+.messages-form .chathead-list a:hover{
+	background-color: rgba(0,28,16,.02);
+	color: #001C13;
+}
+
+.messages-form .chathead-list a #msg-head{
+	border-radius: 4px;
+	background-color: #eee;
+	float: left;
+	margin-right:10px;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+}
+
+.messages-form .chat-window{
+	border: 1px solid #eee;
+	border-radius: 2px;
+	height: 300px;
+	margin-bottom: 1px;
+	padding: 3%;
+	overflow: auto;
+}
+
+.messages-form .chat-window #msg-from,
+.messages-form .chat-window #msg-to{
+	border-radius: 4px;
+	clear: both;
+	margin-bottom:20px;
+	padding: 10px;
+	position: relative;
+	max-width: 70%;
+}
+
+.messages-form .chat-window #msg-from{
+	background-color: rgba(0,28,16,.1);
+	float: left;
+	left: 50px;
+}
+
+.messages-form .chat-window #msg-to{
+	background-color: #4AA50E;
+	color: #fff;
+	float: right;
+	right: 50px;
+}
+
+.messages-form .chat-window #msg-from #msg-head,
+.messages-form .chat-window #msg-to #msg-head{
+	border-radius: 4px;
+	position: absolute;
+	top: 0px;
+	height: 40px;
+	width: 40px;
+	overflow: hidden;
+	
+	background-color:#eee;
+}
+
+.messages-form .chat-window #msg-from #msg-head{
+	left: -50px;
+}
+
+.messages-form .chat-window #msg-to #msg-head{
+	right: -50px;
+	
+	background-color: #4AA50E;
+}
+
+.messages-form .chat-window .fa-caret-left,
+.messages-form .chat-window .fa-caret-right{
+	color: rgba(0,28,16,.1);
+	font-size: 30px;
+	position: absolute;
+	top: 4px;
+}
+
+.messages-form .chat-window #msg-from em,
+.messages-form .chat-window #msg-to em{
+	display: block;
+	font-size: 10px;
+	opacity: .5;
+}
+
+.messages-form .chat-window #msg-from em{
+	text-align: right;
+}
+
+.messages-form .chat-window .fa-caret-left{
+	left: -10px;
+}
+
+.messages-form .chat-window .fa-caret-right{
+	color: #4AA50E;
+	right: -10px;
+}
+
+.messages-form textarea{
+	border: 1px solid #eee;
+	border-radius: 2px;
+	padding: 3%;
+	margin:0;
+	min-height: 30px;
+	max-height: 120px;
+	width: 94%;
+}
+
+.messages-form [type="button"]{
+	border: none;
+	color: #fff;
+	background-color: #4AA50E;
+	border-radius: 2px;
+	padding: 10px 20px;
+}
+
+.messages-form [type="button"]:hover{
+	background-color: #001C13;
+}

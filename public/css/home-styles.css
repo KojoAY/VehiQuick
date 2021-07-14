@@ -1,0 +1,237 @@
+@charset "utf-8";
+@import url(footer-styles.css);
+
+html, body{
+	font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1#heading{
+	color: #001C13;
+	font-size:35px;
+	font-weight:bold;
+	margin-bottom:20px;
+	text-align: center;
+}
+
+.top-header{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+
+.logo-menu{
+	position: absolute;
+	top: 0;
+	padding: 20px 6%;
+	width: 88%;
+	z-index: 99999;
+}
+
+.logo-menu #golyfty-logo{
+
+}
+
+.logo-menu #golyfty-logo img#logo{
+	position: relative;
+	top: 15px;
+	vertical-align: top;
+	width:100px;
+}
+
+.logo-menu #golyfty-logo img#symbol{
+	margin-right: 15px;
+	width:54px;
+}
+
+.logo-menu nav{
+	float: right;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.logo-menu nav a{
+	background-color: rgba(0,28,16,.3);
+	border: 1px dashed rgba(255,255,255,.2);
+	border-radius: 2px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	margin-left: 2px;
+	padding: 10px 15px;
+}
+
+.logo-menu nav a.fa-user-plus{
+	margin-left: 20px;
+}
+
+.logo-menu nav a.fa-user-plus,
+.logo-menu nav a.fa-sign-in{
+	border: 1px dashed rgba(255,255,255,.2);
+	border-radius: 100%;
+	padding: 11.5px 10px;
+	width: 20px;
+}
+
+.logo-menu nav a.fa-user-plus:hover,
+.logo-menu nav a.fa-sign-in:hover{
+	background: #fff;
+	color: #4AA50E;
+}
+
+.logo-menu nav a:hover{
+	background-color: #4AA50E;
+}
+
+.banner{
+	background: url(../images/banner-002.jpg) #ddd no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+#trans-hover{
+	background-color: rgba(0,28,16,.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 9999;
+
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#banner-arrows{
+	color: rgba(255,255,255,.5);
+	font-size: 100px;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 99999;
+}
+
+#banner-arrows span{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+
+/* site description */
+
+.golyfty-desc{
+	background-color: rgba(0,28,16,.05);
+	color:#666;
+	font-size: 20px;
+	font-style: italic;
+	overflow:hidden;
+	padding: 5% 10% 7%;
+	text-align: center;
+	width: 80%;
+}
+
+.golyfty-desc h1{
+	color: #001C13;
+	font-size:40px;
+	font-style:;
+}
+
+.golyfty-desc a{
+	background-color: #4AA50E;
+	border-radius:2px;
+	color:#fff;
+	font-size: 16px;
+	font-style:normal;
+	font-weight:normal;
+	padding:10px 20px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.golyfty-desc a:hover{
+	background-color: #001C13;
+}
+
+
+
+/* home features summary */
+
+.home-feat-sum{
+	background-color: rgba(0,28,16,.05);
+	padding:5% 4%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.home-feat-sum article{
+	float: left;
+	margin: 2% 2% 40px 2%;
+	min-height: 100px;
+	min-width: 250px;
+	width: 29.3%;
+}
+
+.home-feat-sum article i{
+	color: #aaa;
+	font-size: 60px;
+}
+
+.home-feat-sum article h2{
+	font-size:24px;
+	font-weight: 500;
+	margin: 10px 0 20px;
+}
+
+/* home sign up sectio */
+
+.home-sign-up-sect{
+	background-color: #4AA50E;
+	color: #fff;
+	font-size: 20px;
+	padding: 5% 6%;
+	text-align:center;
+}
+
+.home-sign-up-sect h1{
+	font-size: 40px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.home-sign-up-sect a{
+	background-color: rgba(0,28,16,.9);
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	padding:15px 30px;
+}
+
+.home-sign-up-sect a:hover{
+	background-color: #001C13;
+}
+
+
+

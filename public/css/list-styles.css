@@ -1,0 +1,581 @@
+
+/* home list */
+
+.latest-list{
+	padding: 0% 0% 5%;
+	display:relative;
+}
+
+.latest-list-home{
+	padding: 5% 4% 5%;
+	display:relative;
+}
+
+/* list style */
+
+.offer-list-display{
+	display: inline-block;
+	margin: 20px 3%;
+	position: relative;
+	min-width: 240px;
+	width: 43.6%;
+	overflow: hidden;
+}
+
+.offer-list-display #date-time{
+	margin-bottom: 5px;
+}
+
+.offer-list-display #date-time strong{
+	color:#001C13;
+	font-size: 16px;
+}
+
+.offer-list-display #date-time span{
+	float: right;
+}
+
+.offer-list-display .list-ride-info{
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding:3%;
+	position: relative;
+}
+
+.offer-list-display .list-ride-info .fa-map-marker{
+	color: #001C13;
+	font-size:16px;
+}
+
+.fa-map-marker#from{
+	color: #4AA50E;
+}
+
+.offer-list-display .list-ride-info .fa-long-arrow-down{
+	color: #999;
+	font-size:12px;
+	padding: 0 0 0 2px;
+}
+
+.offer-list-display .list-ride-info #rate-seat,
+.offer-list-display .list-ride-info #request-dep-date{
+	position: absolute;
+	top: 2.5%;
+	right: 3%;
+	text-align: right;
+}
+
+.offer-list-display .list-ride-info #request-dep-date{
+	top: 6%;
+}
+
+.offer-list-display .list-ride-info #rate-seat strong{
+	color:#001C13;
+	display: block;
+}
+
+.offer-list-display .list-ride-info #rate-seat strong span{
+	font-size: 20px;
+}
+
+.offer-list-display .list-ride-info .list-user-info{
+	border-top: 1px solid #ddd;
+	font-size: 12px;
+	margin-top: 3%;
+	padding-top: 3%;
+	position: relative;
+	overflow: hidden;
+}
+
+.offer-list-display .list-ride-info .list-user-info img{
+	background-color: #ddd;
+	border: none;
+	border-radius: 4px;
+	float: left;
+	margin-right: 10px;
+	height: 50px;
+	width: 50px;
+}
+
+.offer-list-display .list-ride-info .list-user-info strong{
+	display: block;
+}
+
+.offer-list-display .list-ride-info .list-user-info a#expand{
+	color: #4AA50E;
+	font-size: 35px;
+	font-weight: 500;
+	padding: 2px 10px;
+	position: absolute;
+	top: 28%;
+	right: 0;
+}
+
+.offer-list-display .list-ride-info .list-user-info a#expand:hover{
+	color: #001C13;
+	border-radius: 50%;
+}
+
+.offer-list-display .list-ride-info .list-user-info#no-user-info{
+	text-align: center;
+}
+
+.offer-list-display .list-ride-info .list-user-info#no-user-info a#expand{
+	position: relative !important;
+}
+
+#more-btn{
+	margin-top: 20px;
+	text-align: center;
+}
+
+#more-btn a{
+	background-color: #4AA50E;
+	border-radius: 2px;
+	color: #fff;
+	font-size:16px;
+	padding: 10px 20px;
+	text-transform:capitalize;
+}
+
+#more-btn a:hover{
+	background-color: #001C13;
+	color: #fff;
+}
+
+
+
+
+/* pagination */
+
+.pagination{
+	font-size:24px;
+	margin: 0px 0 6%;
+	text-align:center;
+}
+
+.pagination a{
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: #4AA50E;
+	display: inline-block;
+	padding: 0 0 3px 0;
+	width:35px;
+}
+
+.pagination a:hover,
+.pagination a#act{
+	border: 1px solid #001C13;
+	background-color: #001C13;
+	color: #fff;
+}
+
+.pagination a.fa-chevron-left,
+.pagination a.fa-chevron-right{
+	background: none;
+	font-size: px;
+}
+
+.pagination a.fa-chevron-left:hover,
+.pagination a.fa-chevron-right:hover{
+	background: none;
+	border: 1px solid #fff;
+	color: #001C13;
+}
+
+
+
+
+
+
+/** 
+ * list rides details on page
+ */
+
+.lift-details-box{
+	width: 100%;
+}
+
+.lift-details-box .driver-info{
+	background-color: rgba(0,28,16,.05);
+	border-radius: 4px 4px 0 0;
+	padding: 5px 0;
+	position: relative;
+	height: 60px;
+	width: 100%;
+}
+
+.lift-details-box .driver-info #user-photo{
+	background: #fff no-repeat center;
+	background-size:cover;
+	border: 3px solid #fff;
+	border-radius:4px;
+	float: left;
+    margin: 0 10px 0 2%;
+    overflow: hidden;
+	position:relative;
+	text-align: center;
+    height: 80px;
+    width: 80px;
+}
+
+.lift-details-box .driver-info .fa-user{
+	color: rgba(0,28,16,.1);
+	font-size: 60px;
+	margin-top: 10px;
+}
+
+.lift-details-box .driver-info #user-photo i.fa-check,
+.offer-list-display .list-ride-info .list-user-info .fa-check{
+	background-color: #4AA50E;  
+	color: #fff;
+	border-radius: 50%;
+	padding:2px;
+	position:absolute;
+	bottom:0px;
+}
+
+.lift-details-box .driver-info #user-photo i.fa-check{
+	right: 0px;
+	z-index:999;
+}
+
+.offer-list-display .list-ride-info .list-user-info .fa-check{
+	left: 35px;
+	z-index:999;
+}
+
+.lift-details-box .driver-info #user-info{
+	float: left;
+	font-size: 12px;
+}
+
+.lift-details-box .driver-info #user-info a{
+	color: #001C13;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.lift-details-box .driver-info #user-info a:hover{
+	color: #4AA50E;
+}
+
+.lift-details-box .driver-info a#msg-driver{
+	background-color: #4AA50E;
+	border-radius: 2px;
+	color: #fff;
+	padding: 10px 20px;
+	position:absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.lift-details-box .driver-info a#msg-driver:hover{
+	background-color: #001C13;
+}
+
+
+/**/
+
+.pickup-dropoff-det,
+.trip-det,
+.car-det,
+.other-offers{
+    border-bottom: 1px solid #eee;
+	clear: both;
+	display: block;
+    position: relative;
+    padding: 20px 15px 12px;
+    margin-bottom: 15px;
+}
+
+.pickup-dropoff-det article,
+.trip-det article,
+.car-det article{
+	color: #001C13;
+	font-weight:500;
+	margin: 10px 0;
+}
+
+.car-det article{
+	display: 
+}
+
+.pickup-dropoff-det #label,
+.trip-det #label,
+.car-det #label{
+	color: #444;
+	float:left;
+	font-weight:normal;
+	width: 90px;
+}
+
+.pickup-dropoff-det i,
+.trip-det i,
+.car-det i{
+    color: #001C13;
+}
+
+
+.pickup-dropoff-det #pickup-date{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+.pickup-dropoff-det #pickup-loc span,
+.pickup-dropoff-det #dropoff-loc span{
+    margin-right: 20px;
+}
+
+
+/**/
+
+.trip-det{
+}
+
+.trip-rules,
+.trip-rules-o{
+	overflow:hidden;
+	text-align: center;
+}
+
+.trip-rules-o{
+	text-align: left;
+}
+
+.trip-rules article,
+.trip-rules-o article{
+	vertical-align:top;
+	display: inline-block;
+	margin: 0 1.5%;
+	text-align:center;
+	width:120px;
+}
+
+.trip-rules article{
+	height: 110px;
+}
+
+.trip-rules-o article{
+	margin: 0 2% 0 0;
+	text-align:left;
+	width:250px;
+}
+
+.trip-rules article i,
+.trip-rules-o article i{
+	border-radius:100%;
+	color: #001C13;
+	font-size:40px;
+	font-weight:normal;
+	margin-bottom:10px;
+	padding:15px 0;
+	width:55px;
+}
+
+.trip-rules-o article i{
+	background: none !important;
+	font-size:14px;
+	padding:0;
+	width:15px;
+}
+
+/* lift details book seat button */
+
+#book-seat-btn{
+	background-color: #4AA50E;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	font-size: 20px;
+	margin: 20px auto;
+	padding: 10px 40px;
+}
+
+#book-seat-btn:hover{
+	background-color: #001C13;
+}
+
+
+/**/
+
+.car-det{
+	background-color: rgba(0,28,16,.0);
+	margin-top: 0px;
+	margin-bottom: 40px;
+	padding: 0;
+	position:relative;
+	overflow: hidden;
+}
+
+.car-det .car-photo-holder{
+	float: left;
+	margin-bottom:20px;
+	min-width: 250px;
+	width: 29%;
+}
+
+.car-det #car-photo,
+.car-det #car-photo-main{
+	border: 3px solid rgba(0,28,16,.001);
+	border-radius: 4px;
+	display: inline-block;
+	margin-bottom: 0 !important;
+	margin-right:10px;
+	text-align:justify;
+	height:60px;
+	width:60px;
+	overflow: hidden;
+}
+
+.car-det #car-photo-main{
+	 height: 140px;
+	 width:140px;
+	 float:left;
+	 margin-right:14px;
+}
+
+
+
+
+/**/
+
+.other-offers{
+}
+
+.other-offers #no-other{
+	color: #bbb;
+	font-style:italic;
+	text-align:center;
+}
+
+
+#list-review{
+	border-bottom: 1px solid #eee;
+	border-top: none;
+	margin: 0 0 3% 0;
+	padding: 0 0 3% 0;
+}
+
+#list-review #verified{
+	position: absolute;
+	bottom: 11px !important;
+}
+
+#list-review #report-abuse,
+#list-review #reported{
+	position: absolute;
+	top: 0;
+	right: 0%;
+}
+
+#list-review #reported{
+	color: #C00;
+}
+
+
+
+
+
+
+.main-content-box #set-request-btn,
+#rate-user-btn{
+	background-color: #4AA50E;
+	border-radius: 2px;
+	color: #fff;
+	float: right;
+	padding: 5px 10px;
+}
+
+.main-content-box #set-request-btn:hover,
+#rate-user-btn:hover{
+	background-color: #42930D;
+}
+
+
+
+
+
+/* dashboard */
+
+.offer-list-display .list-ride-info .dashboard-list-user-info{
+	border-top: 1px solid #ddd;
+	font-size: 12px;
+	height: 24px;
+	margin-top: 3%;
+	padding-top: 3%;
+	position: relative;
+	overflow: hidden;
+}
+
+.offer-list-display .list-ride-info .dashboard-list-user-info a{
+	margin:30px 20px 0px 0;
+}
+
+.offer-list-display .list-ride-info .dashboard-list-user-info a#expand{
+	color: #4AA50E;
+	font-size: 35px;
+	font-weight: 500;
+	padding: 2px 10px;
+	margin: 0;
+	position: absolute;
+	top: 0%;
+	right: 0;
+}
+
+.offer-list-display .list-ride-info .dashboard-list-user-info a#expand:hover{
+	color: #001C13;
+	border-radius: 50%;
+}
+
+
+
+
+.offer-list-display .list-ride-info .request-ref{
+	border-top: 1px solid #ddd;
+	font-size: 12px;
+	margin-top: 3%;
+	padding-top: 3%;
+	position: relative;
+	overflow: hidden;
+}
+
+.offer-list-display #request-dep-date #refs{
+	margin-bottom: 18px;
+}
+
+.offer-list-display #request-dep-date #refs strong{
+	color: #4AA50E;
+	font-size: 18px;
+}
+
+.offer-list-display .list-ride-info .request-ref a#expand{
+	color: #4AA50E;
+	font-size: 35px;
+	font-weight: 500;
+	padding: 2px 10px;
+	position: absolute;
+	top: 28%;
+	right: 0;
+}
+
+.offer-list-display #set-request-btn{
+	background: none;
+	color: #4AA50E;
+	float: none;
+	padding: 0;
+}
+
+.offer-list-display #set-request-btn:hover{
+	background: none;
+	color: #001C13;
+}
+
+.offer-list-display .list-ride-info .request-ref a#expand:hover{
+	color: #001C13;
+	border-radius: 50%;
+}

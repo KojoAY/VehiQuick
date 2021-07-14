@@ -1,0 +1,293 @@
+@charset "utf-8";
+@import url(footer-styles.css);
+
+html, body{
+	font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+h1#heading{
+	color: #001C13;
+	font-size:35px;
+	font-weight:bold;
+	margin-bottom:20px;
+	text-align: center;
+}
+
+.top-header{
+	position: relative;
+	width: 100%;
+}
+
+.logo-menu{
+	box-shadow: 0 0 8px -4px #000;
+	position: relative;
+	padding: 5px 6%;
+	width: 88%;
+	z-index: 99999;
+}
+
+.logo-menu #golyfty-logo{
+
+}
+
+.logo-menu #golyfty-logo img#logo{
+	position: relative;
+	top: 5px;
+	vertical-align: top;
+	width:100px;
+}
+
+.logo-menu #golyfty-logo img#symbol{
+	margin-right: 10px;
+	margin-top: 2px;
+	width:36px;
+}
+
+.logo-menu nav{
+	float: right;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.logo-menu nav a{
+	background-color: rgba(0,28,16,1);
+	border-radius: 2px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	margin-left: 2px;
+	padding: 10px 15px;
+}
+
+.logo-menu nav a:hover{
+	background-color: #4AA50E;
+}
+
+.logo-menu nav a.fa-user-plus{
+	margin-left: 20px;
+}
+
+.logo-menu nav a.fa-user-plus,
+.logo-menu nav a.fa-sign-in{
+	background: none;
+	border: 1px dashed rgba(255,255,255,.2);
+	border-radius: 100%;
+	color: #001C13;
+	padding: 11.5px 10px;
+	width: 20px;
+}
+
+.logo-menu nav a.fa-user-plus:hover,
+.logo-menu nav a.fa-sign-in:hover{
+	background: #fff;
+	border: 1px dashed #001C13;
+	color: #4AA50E;
+}
+
+.logo-menu nav a:hover{
+	background-color: #4AA50E;
+}
+
+
+
+
+/* content block */
+
+.main-content-box{
+	padding: 0% 6% 6%;
+	position: relative;
+	overflow: hidden;
+	min-height: 800px;
+	width: 88%;
+}
+
+.main-content-box a{
+	color: #4AA50E;
+}
+
+.main-content-box a:hover{
+	color: #001C13;
+}
+
+.main-content-box h2{
+	font-weight: 500;
+	color: #001C13;
+}
+
+.main-content-box #page-label{
+	display: inline-block;
+	background: rgba(0,28,16,.3);
+	border-radius: 2px;
+	color: #fff;
+	font-size:9.5pt;
+	margin-bottom: 20px;
+	padding: 5px 10px;
+}
+
+
+
+
+
+/* home sign up section */
+
+.home-sign-up-sect{
+	background-color: #4AA50E;
+	color: #fff;
+	font-size: 20px;
+	padding: 5% 6%;
+	text-align:center;
+}
+
+.home-sign-up-sect h1{
+	font-size: 40px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.home-sign-up-sect a{
+	background-color: rgba(0,28,16,.9);
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	padding:15px 30px;
+}
+
+.home-sign-up-sect a:hover{
+	background-color: #001C13;
+}
+
+
+
+
+
+/* user profile block */
+
+.user-info-ul{
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.user-info-ul li{
+	float: left;
+}
+
+.user-info-ul li.left-user-profile-nav{
+	width: 20%;
+	padding: 20px 2% 0;
+	min-width: 220px;
+	width: 20%;
+}
+
+.user-info-ul li.left-user-profile-nav nav{
+	border-bottom: 1px solid #eee;
+	padding: 8px 0px;
+}
+
+.user-info-ul li.left-user-profile-nav article{
+	text-align: center;
+}
+
+.user-info-ul li.left-user-profile-nav nav i{
+	color: #001C13;
+	text-align: center;
+	width: 20px;
+}
+
+.user-info-ul li.left-user-profile-nav article span{
+	margin: 0 4%;
+}
+
+.user-info-ul li.left-user-profile-nav article span i{
+	background-color: #4AA50E;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 10px;
+	padding:3px;
+}
+
+.user-info-ul li.left-user-profile-nav article span i#not-verified{
+	background-color: rgba(0,28,16,.3);
+}
+
+.user-info-ul li.left-user-profile-nav article a{
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	display: inline-block;
+	margin: 15px 0;
+	padding: 10px 20px;
+}
+
+.user-info-ul li.left-user-profile-nav article a:hover{
+	background-color: #001C13;
+	border: 1px solid #001C13;
+	color: #fff
+}
+
+.user-info-ul li.left-user-profile-nav article a i{
+	color: #c00;
+	display: block;
+	font-size: 20px;
+}
+
+.user-info-ul li.user-info{
+	margin-left: 1%;
+	width: 75%;
+}
+
+.user-info-ul li h6{
+	border-radius: 2px;
+	clear: both;
+	background-color: rgba(0,28,16,.1);
+	font-size:11px;
+	letter-spacing: 2px;
+	margin: 10px 0;
+	padding:3px 5px;
+	text-transform: uppercase;
+}
+
+
+.user-info-divs{
+    border-bottom: 1px solid #eee;
+	clear: both;
+	display: block;
+    position: relative;
+    padding: 20px 15px 12px;
+    margin-bottom: 15px;
+}
+
+.user-info-divs article{
+	color: #001C13;
+	font-weight:500;
+	margin: 10px 0;
+}
+
+.user-info-divs #label{
+	color: #444;
+	float:left;
+	font-weight:normal;
+	width: 90px;
+}
+
+.user-info-divs i{
+    color: #001C13;
+}
+

@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* footer */
+
+footer{
+	background-color: #001C13;
+	color: rgba(255,255,255,.5);
+	font-size:12px;
+	padding: 3% 6%;
+	text-align:center;
+}
+
+footer #footer-logo{
+	border: none;
+	margin: 60px 0 15px;
+	opacity: 1;
+}
+
+footer a{
+	color: #4AA50E;
+	margin: 0 5px;
+}
+
+footer a:hover{
+	color: #fff;
+}
+
+footer .footer-links{
+}
+
+footer .footer-links a{
+	font-size:14px;
+	margin: 15px 10px;
+}
+
+footer .footer-soc{
+	font-size: 16px;
+	margin-bottom:20px;
+}
+
+footer .footer-soc a{
+	margin: 0 15px;
+}
+
+footer #copy{
+	margin:auto;
+}
+
